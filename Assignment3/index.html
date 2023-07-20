@@ -14,6 +14,16 @@
       rel="stylesheet"
     />
   </head>
+  <script>
+    function toggleMenu() {
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const navigationMenu = document.querySelector('.navigation-menu');
+    
+    hamburgerMenu.classList.toggle('active');
+    navigationMenu.classList.toggle('active');}
+  </script>
+
+
   <body>
     <header class="header">
       <div class="header__content">
@@ -44,39 +54,22 @@
               <a href="./index.html#contact" class="header__link"> Contact </a>
             </li>
           </ul>
-          <div class="header__main-ham-menu-cont">
-            <img
-              src="./assets/svg/ham-menu.svg"
-              alt="hamburger menu"
-              class="header__main-ham-menu"
-            />
-            <img
-              src="./assets/svg/ham-menu-close.svg"
-              alt="hamburger menu close"
-              class="header__main-ham-menu-close d-none"
-            />
+
+          <div class="menu_btn">
+            <div class="hamburger-menu" onclick="toggleMenu()">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
           </div>
-        </div>
-      </div>
-      <div class="header__sm-menu">
-        <div class="header__sm-menu-content">
-          <ul class="header__sm-menu-links">
-            <li class="header__sm-menu-link">
-              <a href="./index.html"> Home </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#about"> About </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#projects"> Projects </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#contact"> Contact </a>
-            </li>
-          </ul>
+          </div>
+          <nav class="navigation-menu">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index.html#about">About</a></li>
+                <li><a href="./index.html#projects"> Projects </a></li>
+                <li><a href="./index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
         </div>
       </div>
     </header>
@@ -94,7 +87,6 @@
           <a href="./#projects" class="btn btn--bg">Projects</a>
         </div>
       </div>
-      
       <div class="home-hero__socials">
         <div class="home-hero__social">
           <a href="#" class="home-hero__social-icon-link">
@@ -353,7 +345,7 @@
               <a target="_blank" rel="noreferrer" href="#">
                 <img
                   class="main-footer__icon"
-                  src="./assets/png/linkedin-ico.png"
+                  src="https://d33wubrfki0l68.cloudfront.net/d8e6e1e636531e28274a1b8b6d947b817f6145bd/d42d3/assets/svg/linkedin-dark.svg"
                   alt="icon"
                 />
               </a>
@@ -388,7 +380,7 @@
             </div>
           </div>
           <div class="main-footer__row main-footer__row-2">
-            <h4 class="heading heading-sm text-lt">John Doe</h4>
+            <h4 class="heading heading-sm text-lt">PHATHU MANDANE</h4>
             <p class="main-footer__short-desc">
               Lorem ipsum dolor sit amet consectetur adipisicing elit facilis
               tempora explicabo quae quod deserunt
@@ -398,14 +390,12 @@
 
         <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
         <div class="main-footer__lower">
-          &copy; Copyright 2021. Made by
+          &copy; Copyright 2023. Made by
           <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
-            >Ram Maheshwari</a
+            >Phathu Mandane</a
           >
         </div>
       </div>
     </footer>
-
-    <script src="./index.js"></script>
   </body>
 </html>
