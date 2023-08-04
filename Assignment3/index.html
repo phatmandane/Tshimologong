@@ -22,20 +22,13 @@
     hamburgerMenu.classList.toggle('active');
     navigationMenu.classList.toggle('active');}
   </script>
-
-
   <body>
     <header class="header">
       <div class="header__content">
         <div class="header__logo-container">
-          <div class="header__logo-img-cont">
-            <img
-              src="https://img.freepik.com/free-vector/bangkok-thailand-may-12-2023-caricature-tiger-woods-smilin_1308-133923.jpg?w=740&t=st=1689769487~exp=1689770087~hmac=69ef5511295ea3a9cb3f876b28f56c9f6e559d3355e053c5fca581ed6c4be0cf"
-              alt="Phathu Mandane Logo Image"
-              class="header__logo-img"
-            />
-          </div>
-          <span class="header__logo-sub">PHATHU MANDANE</span>
+          <span class="header__logo-sub">
+            <p>&lt;&gt;PHATHU MANDANE &lt;/&gt;</p>
+          </span>
         </div>
         <div class="header__main">
           
@@ -61,8 +54,9 @@
               <div class="line"></div>
               <div class="line"></div>
               <div class="line"></div>
+            </div>
           </div>
-          </div>
+
           <nav class="navigation-menu">
             <ul>
                 <li><a href="./index.html">Home</a></li>
@@ -71,6 +65,7 @@
                 <li><a href="./index.html#contact">Contact</a></li>
             </ul>
         </nav>
+
         </div>
       </div>
     </header>
@@ -87,11 +82,12 @@
         </div>
         <div class="home-hero__cta">
           <button class="btn" type="button">
-            <span class="btn-text">Resume</span>
+            <span class="btn-text">Download CV</span>
             <span class="btn-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg"><path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path><path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path><path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path></svg></span>
           </button>
         </div>
       </div>
+
       <div class="home-hero__socials">
         <div class="home-hero__social">
           <a href="#" class="home-hero__social-icon-link">
@@ -125,52 +121,179 @@
         <div class="mouse"></div>
       </div>
     </section>
-    <section id="about" class="about sec-pad">
+
+    <!--<section id="about" class="about sec-pad">-->
       <div class="main-container">
         <h2 class="heading heading-sec heading-sec__mb-med">
           <span class="heading-sec__main">About Me</span>
         </h2>
-        <div class="about__content">
-          <div class="about__content-main">
-            <h3 class="about__content-title">Get to know me!</h3>
-            <div class="about__content-details">
-              <p class="about__content-details-para">
-                Hey! It's
-                <strong>Phathu Mandane</strong>
-                and I'm a <strong> Frontend Web Developer </strong> located in
-                Johannesburg, South Africa. I've done
-                <strong> remote </strong>
-                projects for agencies, consulted for startups, and collaborated
-                with talented people to create
-                <strong>digital products </strong>
-                for both business and consumer use.
-              </p>
-              <p class="about__content-details-para">
-                I'm a bit of a digital product junky. Over the years, I've used
-                hundreds of web and mobile apps in different industries and
-                verticals. Feel free to
-                <strong>contact</strong> me here.
-              </p>
+        
+        <div class="card">
+          <!--<div class="card-child"  data-state="#about">-->
+            <!--------------------------------------------Card Header------------------------------------------------------------------------------------------------------>
+            <div class="card-header">
+              <img class="card-avatar" src="https://cdn-icons-png.flaticon.com/128/4140/4140057.png" alt="avatar" />
+              <h1 class="card-fullname">Phathu Mandane</h1>
+              <h2 class="card-jobtitle">Web Developer</h2>
             </div>
-            <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr"
-              >Contact</a
-            >
-          </div>
-          <div class="about__content-skills">
-            <h3 class="about__content-title">My Skills</h3>
-            <div class="skills">
-              <div class="skills__skill">HTML</div>
-              <div class="skills__skill">CSS</div>
-              <div class="skills__skill">JavaScript</div>
-              <div class="skills__skill">React</div>
-              <div class="skills__skill">GIT</div>
-              <div class="skills__skill">Java</div>
-              <div class="skills__skill">Python</div>
+
+            <div class="card-main">
+              <div class="card-section is-active" id="about">
+
+                <!---------------------------------------About section------------------------------------------------------------------>
+                <div class="card-content">
+                  <div class="card-subtitle">ABOUT</div>
+                  <p class="card-desc">Whatever tattooed stumptown art party sriracha gentrify hashtag intelligentsia readymade schlitz brooklyn disrupt.
+                  </p>
+                </div>
+                <!------------------------------------------------------------------------------------------------------->
+
+                <!-- Social Icons-->
+                <div class="card-social">
+
+                  <!--Facebook-->
+                  <a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.997 3.985h2.191V.169C17.81.117 16.51 0 14.996 0c-3.159 0-5.323 1.987-5.323 5.639V9H6.187v4.266h3.486V24h4.274V13.267h3.345l.531-4.266h-3.877V6.062c.001-1.233.333-2.077 2.051-2.077z" /></svg></a>
+
+                  <!--twitter-->
+                  <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M512 97.248c-19.04 8.352-39.328 13.888-60.48 16.576 21.76-12.992 38.368-33.408 46.176-58.016-20.288 12.096-42.688 20.64-66.56 25.408C411.872 60.704 384.416 48 354.464 48c-58.112 0-104.896 47.168-104.896 104.992 0 8.32.704 16.32 2.432 23.936-87.264-4.256-164.48-46.08-216.352-109.792-9.056 15.712-14.368 33.696-14.368 53.056 0 36.352 18.72 68.576 46.624 87.232-16.864-.32-33.408-5.216-47.424-12.928v1.152c0 51.008 36.384 93.376 84.096 103.136-8.544 2.336-17.856 3.456-27.52 3.456-6.72 0-13.504-.384-19.872-1.792 13.6 41.568 52.192 72.128 98.08 73.12-35.712 27.936-81.056 44.768-130.144 44.768-8.608 0-16.864-.384-25.12-1.44C46.496 446.88 101.6 464 161.024 464c193.152 0 298.752-160 298.752-298.688 0-4.64-.16-9.12-.384-13.568 20.832-14.784 38.336-33.248 52.608-54.496z" /></svg></a>
+
+                  <a href="#"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M301 256c0 24.852-20.148 45-45 45s-45-20.148-45-45 20.148-45 45-45 45 20.148 45 45zm0 0" />
+                    <path d="M332 120H180c-33.086 0-60 26.914-60 60v152c0 33.086 26.914 60 60 60h152c33.086 0 60-26.914 60-60V180c0-33.086-26.914-60-60-60zm-76 211c-41.355 0-75-33.645-75-75s33.645-75 75-75 75 33.645 75 75-33.645 75-75 75zm86-146c-8.285 0-15-6.715-15-15s6.715-15 15-15 15 6.715 15 15-6.715 15-15 15zm0 0" />
+                    <path d="M377 0H135C60.562 0 0 60.563 0 135v242c0 74.438 60.563 135 135 135h242c74.438 0 135-60.563 135-135V135C512 60.562 451.437 0 377 0zm45 332c0 49.625-40.375 90-90 90H180c-49.625 0-90-40.375-90-90V180c0-49.625 40.375-90 90-90h152c49.625 0 90 40.375 90 90zm0 0" /></svg></a>
+                  
+                      
+                  <a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 002.882 0z" /></svg></a>
+                </div>
+                <!---------------------------------------------------------------------------------------------->
+                <div class="card-contact-wrapper">
+                  <div class="card-contact">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                      <circle cx="12" cy="10" r="3" /></svg>
+                    13558 Mfutsanyane Str, Kagiso 2 ext8, Mogale City, 1754
+                  </div>
+                  <div class="card-contact">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" /></svg>
+                    (+27)-7163-04404
+                  </div>
+                  <div class="card-contact">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                      <path d="M22 6l-10 7L2 6" /></svg>
+                    phathu@mandane.com
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-section" id="experience">
+                <div class="card-content">
+                  <div class="card-subtitle">WORK EXPERIENCE</div>
+                  <div class="card-timeline">
+                    <div class="card-item" data-year="2014">
+                      <div class="card-item-title">Front-end Developer at <span>JotForm</span></div>
+                      <div class="card-item-desc">Disrupt stumptown retro everyday carry unicorn.</div>
+                    </div>
+                    <div class="card-item" data-year="2016">
+                      <div class="card-item-title">UI Developer at <span>GitHub</span></div>
+                      <div class="card-item-desc">Developed new conversion funnels and disrupt.</div>
+                    </div>
+                    <div class="card-item" data-year="2018">
+                      <div class="card-item-title">Illustrator at <span>Google</span></div>
+                      <div class="card-item-desc">Onboarding illustrations for App.</div>
+                    </div>
+                    <div class="card-item" data-year="2020">
+                      <div class="card-item-title">Full-Stack Developer at <span>CodePen</span></div>
+                      <div class="card-item-desc">Responsible for the encomposing brand expreience.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-section" id="skills">
+                <div class="card-content">
+                  <div class="card-subtitle">SKILLS</div>
+                  <div class="card-contact-wrapper">  
+        
+                    <div class="card-contact">
+                      <div class="contact__form-container">
+                        <img src="https://cdn-icons-png.flaticon.com/128/732/732190.png">
+                        <img src="https://cdn-icons-png.flaticon.com/128/5968/5968267.png">
+                        <img src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png">
+                        <img src="https://cdn-icons-png.flaticon.com/128/226/226777.png">
+                        <img src="https://cdn-icons-png.flaticon.com/128/5968/5968350.png">
+                        <img src="https://cdn-icons-png.flaticon.com/128/875/875209.png">
+                        <img src="https://img.icons8.com/?size=512&id=90519&format=png">
+                        <img src="https://img.icons8.com/?size=1x&id=33039&format=png">
+                    </div>
+                    </div>
+                    <!--
+                        <div class="card-contact">
+                        <img src="https://cdn-icons-png.flaticon.com/128/226/226777.png">
+                        <img src="https://cdn-icons-png.flaticon.com/128/5968/5968350.png">
+                        <img src="https://cdn-icons-png.flaticon.com/128/875/875209.png">
+                    </div>
+        
+                    <div class="card-contact">
+                        <img src="https://img.icons8.com/?size=512&id=90519&format=png">
+                        <img src="https://img.icons8.com/?size=1x&id=33039&format=png">
+                    </div>
+                    -->
+                    
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
+
+              <div class="card-buttons">
+                <button data-section="#about" class="is-active">ABOUT</button>
+                <button data-section="#experience">EXPERIENCE</button>
+                <button data-section="#skills">SKILLS</button>
+              </div>
+          </div>    
+
+            <!--My skills section-->
+    
+   <!--
+    <div class="card">
+        <h3 class="about__content-title">My Skills</h3>
+        <div class="skills-container">
+            <div class="skills__skill">
+              <img class="icon" src="https://icons.iconarchive.com/icons/praveen/minimal-outline/256/check-icon.png" alt="Experience icon">
+              <h3>HTML</h3>
+            </div>
+
+            <div class="skills__skill">
+              <img class="icon" src="https://icons.iconarchive.com/icons/praveen/minimal-outline/256/check-icon.png" alt="Experience icon">
+              <h3>CSS</h3>
+            </div>
+
+            <div class="skills__skill">
+              <img class="icon" src="https://icons.iconarchive.com/icons/praveen/minimal-outline/256/check-icon.png" alt="Experience icon">
+              <h3>JavaScript</h3>
+            </div>
+
+            <div class="skills__skill"><img class="icon" src="https://icons.iconarchive.com/icons/praveen/minimal-outline/256/check-icon.png" alt="Experience icon">
+              <h3>React</h3></div>
+
+              <div class="skills__skill"><img class="icon" src="https://icons.iconarchive.com/icons/praveen/minimal-outline/256/check-icon.png" alt="Experience icon">
+                <h3>Java</h3></div>
+
+              <div class="skills__skill"><img class="icon" src="https://icons.iconarchive.com/icons/praveen/minimal-outline/256/check-icon.png" alt="Experience icon">
+                <h3>Python</h3></div>
+            
+            
+              <div class="skills__skill"><img class="icon" src="https://icons.iconarchive.com/icons/praveen/minimal-outline/256/check-icon.png" alt="Experience icon">
+                <h3>GIT</h3></div>
         </div>
-      </div>
-    </section>
+      
+  </div>
+   -->
+  </div>
     <section id="projects" class="projects sec-pad">
       <div class="main-container">
         <h2 class="heading heading-sec heading-sec__mb-bg">
@@ -250,13 +373,13 @@
                 href="./project-3.html"
                 class="btn btn--med btn--theme dynamicBgClr"
                 target="_blank"
-                >Case Study</a
-              >
+                >Case Study</a>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <section id="contact" class="contact sec-pad dynamicBg">
       <div class="main-container">
         <h2 class="heading heading-sec heading-sec__mb-med">
@@ -309,6 +432,7 @@
         </div>
       </div>
     </section>
+
     <footer class="main-footer">
       <div class="main-container">
         <div class="main-footer__upper">
@@ -367,10 +491,27 @@
         <div class="main-footer__lower">
           &copy; Copyright 2023. Made by
           <a rel="noreferrer" target="_blank" href=""
-            >Phathu Mandane</a
-          >
+            >Phathu Mandane</a>
         </div>
       </div>
     </footer>
+    
+  <script>
+      // JavaScript code to handle button clicks and show corresponding sections
+  const buttons = document.querySelectorAll(".card-buttons button");
+  const sections = document.querySelectorAll(".card-section");
+  
+  buttons.forEach((button) => {
+      button.addEventListener("click", () => {
+      const sectionId = button.getAttribute("data-section");
+  
+      buttons.forEach((btn) => btn.classList.remove("is-active"));
+      sections.forEach((section) => section.classList.remove("is-active"));
+  
+      button.classList.add("is-active");
+      document.querySelector(sectionId).classList.add("is-active");
+    });
+  });
+  </script>
   </body>
 </html>

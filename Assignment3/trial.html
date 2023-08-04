@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Profile Card</title>
+</head>
+<script>
+    function toggleMenu() {
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const navigationMenu = document.querySelector('.navigation-menu');
+    hamburgerMenu.classList.toggle('active');
+    navigationMenu.classList.toggle('active');}
+  </script>
+<body>
+    <!--HEADER SECTION-->
+    <header class="header">
+        <div class="header__content">
+          <div class="header__logo-container">
+            <span class="header__logo-sub">
+              <p>&lt;&gt;PM&lt;/&gt;</p>
+            </span>
+          </div>
+          <div class="header__main">
+            
+            <ul class="header__links">
+              <li class="header__link-wrapper">
+                <a href="./trial.html" class="header__link"> Home </a>
+              </li>
+              <li class="header__link-wrapper">
+                <a href="./trial.html" class="header__link">About Me </a>
+              </li>
+              <li class="header__link-wrapper">
+                <a href="./index.html#projects" class="header__link">
+                  Projects
+                </a>
+              </li>
+              <li class="header__link-wrapper">
+                <a href="./index.html#contact" class="header__link"> Contact </a>
+              </li>
+            </ul>
+  
+            <div class="menu_btn">
+              <div class="hamburger-menu" onclick="toggleMenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+              </div>
+            </div>
+  
+            <nav class="navigation-menu">
+              <ul>
+                  <li><a href="./index.html">Home</a></li>
+                  <li><a href="./index.html#about">About Me</a></li>
+                  <li><a href="./index.html#projects"> Projects </a></li>
+                  <li><a href="./index.html#contact">Contact</a></li>
+              </ul>
+          </nav>
+  
+          </div>
+        </div>
+      </header>
+
+<!---Home hero-->
+<section class="home-hero">
+    <div class="home-hero__content">
+      <h1 class="heading-primary">Hey, I'm Phathu Mandane</h1>
+      <div class="home-hero__info">
+        <p class="text-primary">
+          
+          A Full Stack Developer building Websites
+            and Web Applications that leads to the success of the overall
+            product.
+        </p>
+      </div>
+      <div class="home-hero__cta">
+        <button class="btn" type="button">
+          <span class="btn-text">Download CV</span>
+          <span class="btn-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg"><path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path><path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path><path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path></svg></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="home-hero__socials">
+      <div class="home-hero__social">
+        <a href="#" class="home-hero__social-icon-link">
+          <img
+            src="https://d33wubrfki0l68.cloudfront.net/d8e6e1e636531e28274a1b8b6d947b817f6145bd/d42d3/assets/svg/linkedin-dark.svg"
+            alt="icon"
+            class="home-hero__social-icon"
+          />
+        </a>
+      </div>
+      <div class="home-hero__social">
+        <a href="#" class="home-hero__social-icon-link">
+          <img
+            src="https://d33wubrfki0l68.cloudfront.net/ba3ef9fd9d500c55ba265adae6087ba71e05f5d9/d0067/assets/svg/twitter-dark.svg"
+            alt="icon"
+            class="home-hero__social-icon"
+          />
+        </a>
+      </div>
+      <div class="home-hero__social">
+        <a href="#" class="home-hero__social-icon-link">
+          <img
+            src="https://d33wubrfki0l68.cloudfront.net/38469cf88d038b6ba3322c9fcb93a8f7167df4b9/cb0b9/assets/svg/github-dark.svg"
+            alt="icon"
+            class="home-hero__social-icon"
+          />
+        </a>
+      </div>
+    </div>
+    <div class="home-hero__mouse-scroll-cont">
+      <div class="mouse"></div>
+    </div>
+  </section>
+<!--Card Section-->
+<h2 class="heading heading-sec heading-sec__mb-med">
+   <!-- <span class="heading-sec__main">About Me</span>-->
+  </h2>
+  <div class="main-container">
+  <div class="card">
+
+    <div class="card-header">
+      <img class="card-avatar" src="https://cdn-icons-png.flaticon.com/128/8114/8114406.png" alt="avatar" />
+      <!--<h1 class="card-fullname">ABOUT ME</h1>-->
+      <h2 class="card-jobtitle"><b>Full Stack Developer</b></h2>
+    </div>
+
+    <div class="card-main">
+
+      <div class="card-section is-active" id="about">
+        <div class="card-content">
+          <div class="card-subtitle">ABOUT</div>
+          <p class="card-desc">AI and web development enthusiast with a BSc in Computer Science from UWC, on a mission to revolutionize the digital world. Let's code the future together!</p>
+        </div>
+        <div class="card-social">
+
+            <!--Facebook-->
+            <a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.997 3.985h2.191V.169C17.81.117 16.51 0 14.996 0c-3.159 0-5.323 1.987-5.323 5.639V9H6.187v4.266h3.486V24h4.274V13.267h3.345l.531-4.266h-3.877V6.062c.001-1.233.333-2.077 2.051-2.077z" /></svg></a>
+    
+            <!--twitter-->
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path d="M512 97.248c-19.04 8.352-39.328 13.888-60.48 16.576 21.76-12.992 38.368-33.408 46.176-58.016-20.288 12.096-42.688 20.64-66.56 25.408C411.872 60.704 384.416 48 354.464 48c-58.112 0-104.896 47.168-104.896 104.992 0 8.32.704 16.32 2.432 23.936-87.264-4.256-164.48-46.08-216.352-109.792-9.056 15.712-14.368 33.696-14.368 53.056 0 36.352 18.72 68.576 46.624 87.232-16.864-.32-33.408-5.216-47.424-12.928v1.152c0 51.008 36.384 93.376 84.096 103.136-8.544 2.336-17.856 3.456-27.52 3.456-6.72 0-13.504-.384-19.872-1.792 13.6 41.568 52.192 72.128 98.08 73.12-35.712 27.936-81.056 44.768-130.144 44.768-8.608 0-16.864-.384-25.12-1.44C46.496 446.88 101.6 464 161.024 464c193.152 0 298.752-160 298.752-298.688 0-4.64-.16-9.12-.384-13.568 20.832-14.784 38.336-33.248 52.608-54.496z" /></svg></a>
+    
+            <!--instagram-->
+            <a href="#"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+              <path d="M301 256c0 24.852-20.148 45-45 45s-45-20.148-45-45 20.148-45 45-45 45 20.148 45 45zm0 0" />
+              <path d="M332 120H180c-33.086 0-60 26.914-60 60v152c0 33.086 26.914 60 60 60h152c33.086 0 60-26.914 60-60V180c0-33.086-26.914-60-60-60zm-76 211c-41.355 0-75-33.645-75-75s33.645-75 75-75 75 33.645 75 75-33.645 75-75 75zm86-146c-8.285 0-15-6.715-15-15s6.715-15 15-15 15 6.715 15 15-6.715 15-15 15zm0 0" />
+              <path d="M377 0H135C60.562 0 0 60.563 0 135v242c0 74.438 60.563 135 135 135h242c74.438 0 135-60.563 135-135V135C512 60.562 451.437 0 377 0zm45 332c0 49.625-40.375 90-90 90H180c-49.625 0-90-40.375-90-90V180c0-49.625 40.375-90 90-90h152c49.625 0 90 40.375 90 90zm0 0" /></svg></a>
+            
+            <!--linked-in-->    
+            <a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 002.882 0z" /></svg></a>
+        </div>
+        <div class="card-contact-wrapper">
+            <div class="card-contact">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                <circle cx="12" cy="10" r="3" /></svg>
+              13558 Mfutsanyane Str, Kagiso 2 ext8, Mogale City, 1754
+            </div>
+            <div class="card-contact">
+              <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" /></svg>
+              (+27)-7163-04404
+            </div>
+            <div class="card-contact">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <path d="M22 6l-10 7L2 6" /></svg>
+              phathu@mandane.com
+            </div>
+          </div>
+      </div>
+    <!-- Social Icons-->
+
+    <div class="card-section" id="experience">
+        <div class="card-content">
+          <div class="card-subtitle">WORK EXPERIENCE</div>
+          <div class="card-timeline">
+            <div class="card-item" data-year="2014">
+              <div class="card-item-title">Front-end Developer at <span>JotForm</span></div>
+              <div class="card-item-desc">Disrupt stumptown retro everyday carry unicorn.</div>
+            </div>
+            <div class="card-item" data-year="2016">
+              <div class="card-item-title">UI Developer at <span>GitHub</span></div>
+              <div class="card-item-desc">Developed new conversion funnels and disrupt.</div>
+            </div>
+            <div class="card-item" data-year="2018">
+              <div class="card-item-title">Illustrator at <span>Google</span></div>
+              <div class="card-item-desc">Onboarding illustrations for App.</div>
+            </div>
+            <div class="card-item" data-year="2023">
+              <div class="card-item-title">Full-Stack Developer at <span>Tshimologong</span></div>
+              <div class="card-item-desc">Developed a full website</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-section" id="skills">
+        <div class="card-content">
+          <div class="card-subtitle">SKILLS</div>
+          <div class="card-contact-wrapper">  
+
+            <div class="card-contact">
+                <img src="https://cdn-icons-png.flaticon.com/128/732/732190.png">
+                <img src="https://cdn-icons-png.flaticon.com/128/5968/5968267.png">
+                <img src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png">
+                <img src="https://cdn-icons-png.flaticon.com/128/226/226777.png">
+                <img src="https://cdn-icons-png.flaticon.com/128/5968/5968350.png">
+                <img src="https://cdn-icons-png.flaticon.com/128/875/875209.png">
+                <img src="https://img.icons8.com/?size=512&id=90519&format=png">
+                <img src="https://img.icons8.com/?size=1x&id=33039&format=png">
+            </div>
+            <!--
+                <div class="card-contact">
+                <img src="https://cdn-icons-png.flaticon.com/128/226/226777.png">
+                <img src="https://cdn-icons-png.flaticon.com/128/5968/5968350.png">
+                <img src="https://cdn-icons-png.flaticon.com/128/875/875209.png">
+            </div>
+
+            <div class="card-contact">
+                <img src="https://img.icons8.com/?size=512&id=90519&format=png">
+                <img src="https://img.icons8.com/?size=1x&id=33039&format=png">
+            </div>
+            -->
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-buttons">
+        <button data-section="#about" class="is-active">ABOUT</button>
+        <button data-section="#experience">EXPERIENCE</button>
+        <button data-section="#skills">SKILLS</button>
+      </div>
+  </div>
+</div>
+
+  <!--Project Section-->
+  <section id="projects" class="projects sec-pad">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-bg">
+        <span class="heading-sec__main">Projects</span>
+        <span class="heading-sec__sub">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
+          tempora explicabo quae quod deserunt eius sapiente
+        </span>
+      </h2>
+
+      <div class="projects__content">
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img
+              src="https://img.freepik.com/free-psd/marketing-business-banner-template_23-2148990534.jpg?w=1480&t=st=1689938048~exp=1689938648~hmac=ec5be6ede5b4dd08658b8ea63695cebb6cf71024a715b69823ab3bc14f8c981b"
+              alt="Software Screenshot"
+              class="projects__row-img"
+              loading="lazy"
+            />
+          </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">Project 1</h3>
+            <p class="projects__row-content-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+              facilis tempora, explicabo quae quod deserunt eius sapiente
+              praesentium.
+            </p>
+            <a
+              href="./project-1.html"
+              class="btn btn--med btn--theme dynamicBgClr"
+              target="_blank"
+              >Case Study</a
+            >
+          </div>
+        </div>
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img
+              src="https://img.freepik.com/free-psd/modern-landing-page-mockup_23-2148095008.jpg?w=1380&t=st=1689938131~exp=1689938731~hmac=7bc296f4badc4335b03483466c689af5e976f89d5d64adccf41f9578b236c3f5"
+              alt="Software Screenshot"
+              class="projects__row-img"
+              loading="lazy"
+            />
+          </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">Project 2</h3>
+            <p class="projects__row-content-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+              facilis tempora, explicabo quae quod deserunt eius sapiente
+              praesentium.
+            </p>
+            <a
+              href="./project-2.html"
+              class="btn btn--med btn--theme dynamicBgClr"
+              target="_blank"
+              >Case Study</a
+            >
+          </div>
+        </div>
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img
+              src="https://img.freepik.com/free-psd/flat-design-event-template-design_23-2149287745.jpg?w=1480&t=st=1689938173~exp=1689938773~hmac=c207dcaed04c6d5b92a1a63479b13cb2b2313d4000c23c9ecf24c818018f337c"
+              alt="Software Screenshot"
+              class="projects__row-img"
+              loading="lazy"
+            />
+          </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">Project 3</h3>
+            <p class="projects__row-content-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+              facilis tempora, explicabo quae quod deserunt eius sapiente
+              praesentium.
+            </p>
+            <a
+              href="./project-3.html"
+              class="btn btn--med btn--theme dynamicBgClr"
+              target="_blank"
+              >Case Study</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact sec-pad dynamicBg">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-med">
+        <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+        <span class="heading-sec__sub heading-sec__sub--lt">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
+          tempora explicabo quae quod deserunt eius sapiente
+        </span>
+      </h2>
+      <div class="contact__form-container">
+        <form action="#" class="contact__form">
+          <div class="contact__form-field">
+            <label class="contact__form-label" for="name">Name</label>
+            <input
+              required
+              placeholder="Enter Your Name"
+              type="text"
+              class="contact__form-input"
+              name="name"
+              id="name"
+            />
+          </div>
+          <div class="contact__form-field">
+            <label class="contact__form-label" for="email">Email</label>
+            <input
+              required
+              placeholder="Enter Your Email"
+              type="text"
+              class="contact__form-input"
+              name="email"
+              id="email"
+            />
+          </div>
+          <div class="contact__form-field">
+            <label class="contact__form-label" for="message">Message</label>
+            <textarea
+              required
+              cols="30"
+              rows="10"
+              class="contact__form-input"
+              placeholder="Enter Your Message"
+              name="message"
+              id="message"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn--theme contact__btn">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="https://d33wubrfki0l68.cloudfront.net/d8e6e1e636531e28274a1b8b6d947b817f6145bd/d42d3/assets/svg/linkedin-dark.svg"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/twitter-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/yt-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon main-footer__icon--mr-none"
+                  src="./assets/png/insta-ico.png"
+                  alt="icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">PHATHU MANDANE</h4>
+            <p class="main-footer__short-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit facilis
+              tempora explicabo quae quod deserunt
+            </p>
+          </div>
+        </div>
+
+        <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
+        <div class="main-footer__lower">
+          &copy; Copyright 2023. Made by
+          <a rel="noreferrer" target="_blank" href=""
+            >Phathu Mandane</a
+          >
+        </div>
+      </div>
+    </footer>
+  <!--Javascript-->
+  <script>
+    // JavaScript code to handle button clicks and show corresponding sections
+    const buttons = document.querySelectorAll(".card-buttons button");
+    const sections = document.querySelectorAll(".card-section");
+
+buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+    const sectionId = button.getAttribute("data-section");
+
+    buttons.forEach((btn) => btn.classList.remove("is-active"));
+    sections.forEach((section) => section.classList.remove("is-active"));
+
+    button.classList.add("is-active");
+    document.querySelector(sectionId).classList.add("is-active");
+  });
+});
+
+  </script>
+</body>
+</html>

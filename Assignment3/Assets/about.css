@@ -1,0 +1,50 @@
+/* CSS for the about me section */
+
+.about__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10rem;
+  }
+  
+  .details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  
+  .skills-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+  }
+  
+  .about__content-title {
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin-bottom: 3rem;
+  }
+  
+  .about__content-details-para {
+    font-size: 1.8rem;
+    color: grey;
+    max-width: 60rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+  }
+  
+  .about__content-details-para--hl {
+    font-weight: 700;
+    margin: 0 3px;
+  }
+  
+  .about__content-details-para:last-child {
+    margin-bottom: 4rem;
+  }
+  

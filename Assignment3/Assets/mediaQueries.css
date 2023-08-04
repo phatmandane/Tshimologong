@@ -1,0 +1,61 @@
+/* Default styles for all screen sizes */
+.about__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .projects__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 11rem;
+  }
+  
+  .contact__form-container {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: white;
+    padding: 4rem;
+    margin-top: 6rem;
+    max-width: 80rem;
+    width: 95%;
+    border-radius: 5px;
+    margin: 5rem auto 0 auto;
+  }
+  
+  /* Media query for small screens */
+  @media only screen and (max-width: 37.5em) {
+    /* Add your CSS rules for small screens here */
+    .about__content,
+    .projects__row {
+      flex-direction: column;
+    }
+  
+    .contact__form-container {
+      text-align: center;
+    }
+  }
+  
+  /* Media query for medium screens */
+  @media only screen and (min-width: 37.5em) and (max-width: 56.25em) {
+    /* Add your CSS rules for medium screens here */
+    .about__content,
+    .projects__row {
+      flex-direction: column;
+    }
+  }
+  
+  /* Media query for large screens */
+  @media only screen and (min-width: 56.25em) and (max-width: 75em) {
+    /* Add your CSS rules for large screens here */
+    .about__content,
+    .projects__row {
+      flex-direction: row;
+    }
+  }
+  
+  /* Media query for extra-large screens */
+  @media only screen and (min-width: 75em) {
+    /* Add your CSS rules for extra-large screens here */
+  }
+  

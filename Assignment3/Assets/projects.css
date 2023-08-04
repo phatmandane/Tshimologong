@@ -1,0 +1,45 @@
+/* CSS for the projects section */
+
+.projects__row {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-gap: 5rem;
+    margin-bottom: 11rem;
+  }
+  
+  .projects__row:last-child {
+    margin-bottom: 0;
+  }
+  
+  .projects__row-img-cont {
+    overflow: hidden;
+  }
+  
+  .projects__row-img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+  
+  .projects__row-content {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .projects__row-content-title {
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+  }
+  
+  .projects__row-content-desc {
+    font-size: 1.8rem;
+    color: grey;
+    max-width: 60rem;
+    line-height: 1.7;
+    margin-bottom: 3rem;
+  }
+  
