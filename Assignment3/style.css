@@ -1025,7 +1025,9 @@ textarea {
   margin: 0;
   font-weight: 400;
   font-family: "DM Sans", sans-serif;
+  text-align: center;
 }
+
 
 .card-social {
   align-items: center;

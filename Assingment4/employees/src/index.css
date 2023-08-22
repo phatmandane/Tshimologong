@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.app {
+  max-width: 800px;
+  margin: 30px auto;
+  margin-top: 150px;
+  overflow: auto;
+  min-height: 300px;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border: none;
+}
+.btn {
+  display: inline-block;
+  background: #164b60;
+  color: #f5f5f5;
+  border: none;
+  padding: 10px 26px;
+  margin: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 12px;
+  font-family: inherit;
+  font-weight: 600;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-block {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Add this line to vertically center the button */
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.member {
+  margin: 20px;
+  padding: 10px 20px;
+  /* cursor: pointer; */
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.member.reminder {
+  border-left: 5px solid green;
+}
+
+.member h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: lighter;
+}
+
+.member h2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.add-form {
+  margin-bottom: 40px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.arrow-link {
+  color: #164b60;
+}
+
+.form-control {
+  margin: 20px 0;
+}
+
+.form-control input {
+  width: 100%;
+  max-width: 626px;
+  height: 61px;
+  margin: 5px;
+  font-size: 20px;
+  border: none;
+  color: #000;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3); /* Adjust values as needed */
+}
+
+.form-control-check {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-control-check label {
+  flex: 1;
+}
+
+.form-control-check input {
+  flex: 2;
+  height: 20px;
+}
+
+.member-content {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+.member-image {
+  width: 100%;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.member-details {
+  width: 100%;
+  margin-left: 10px; /* Add spacing between image and details */
+}
+
+.member-icons {
+  display: flex;
+  justify-content: flex-end; /* Space between name and icons */
+  align-items: center;
+}
+.member-icons > * {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.profile-picture-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  position: relative;
+}
+
+.profile-picture {
+  width: 190px;
+  height: 190px;
+  border: 1px solid #7b6ec5;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.placeholder-image {
+  width: 190px;
+  height: 190px;
+  border: 1px solid #7b6ec5;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.profile-picture-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.add-icon {
+  position: absolute;
+  top: 80%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  background-color: #5c5252;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  font-size: 24px;
+  z-index: 1;
+}
