@@ -1,0 +1,7 @@
+{
+  "globals": {
+    // Add Firestore globals here
+    "getDocs": "readonly",
+    "deleteDoc": "readonly"
+  }
+}
